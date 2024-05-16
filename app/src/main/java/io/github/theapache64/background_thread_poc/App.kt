@@ -15,10 +15,10 @@ class App : Application() {
             AppStartUpLifeCycleCallbacks()
         )
 
-        /*backgroundScope.launch {
+        backgroundScope.launch {
             println("QuickTag: App:onCreate: Starting CPU intensive task")
             // simulate CPU intensive task
-            for(i in 0..1000){
+            for(i in 0..10000000){
                 launch {
                     for (k in 0..1000000000) {
                         // simulate CPU intensive operation
@@ -27,6 +27,6 @@ class App : Application() {
                 }
             }
             println("QuickTag: App:onCreate: CPU intensive task completed")
-        }*/
+        }
     }
 }
