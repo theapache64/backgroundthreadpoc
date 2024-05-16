@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "io.github.theapache64.background_thread_poc"
-        minSdk = 26
+        minSdk = 22
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"

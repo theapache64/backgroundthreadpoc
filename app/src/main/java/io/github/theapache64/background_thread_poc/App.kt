@@ -18,7 +18,7 @@ class App : Application() {
         backgroundScope.launch {
             println("QuickTag: App:onCreate: Starting CPU intensive task")
             // simulate CPU intensive task
-            for(i in 0..10000000){
+            for(i in 0..10000){
                 launch {
                     for (k in 0..1000000000) {
                         // simulate CPU intensive operation
