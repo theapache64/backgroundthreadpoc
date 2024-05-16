@@ -9,8 +9,6 @@ import io.github.theapache64.background_thread_poc.NextDrawListener.Companion.on
 
 class AppStartUpLifeCycleCallbacks :
     Application.ActivityLifecycleCallbacks {
-    @Suppress("DEPRECATION")
-    val handler = Handler()
 
     override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
         var firstDraw = false

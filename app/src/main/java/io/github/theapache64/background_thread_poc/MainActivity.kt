@@ -14,10 +14,16 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import io.github.theapache64.background_thread_poc.ui.theme.BackgroundthreadpocTheme
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        runBlocking {
+            //simulate onCreate tasks
+            delay(500)
+        }
         setContent {
             BackgroundthreadpocTheme {
                 // A surface container using the 'background' color from the theme
