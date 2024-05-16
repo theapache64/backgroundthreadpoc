@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Backgroundthreadpoc"
         tools:targetApi="31">
+
+        <provider
+            android:name=".StartTimeProvider"
+            android:authorities="${applicationId}.appStartProvider"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
